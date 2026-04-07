@@ -1,0 +1,124 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* HEADER */
+header {
+  background: #000;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+#hero {
+  height: 600px;
+  background-image: url("../images/hands-typing.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero h1 {
+  max-width: 60%;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 1rem;
+  text-shadow: 2px 2px 6px black;
+}
+
+/* ABOUT */
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.about-image {
+  align-self: end;
+}
+
+/* SERVICES */
+#services {
+  background: #fafafa;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.services-grid article {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: white;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: auto;
+  padding: 0.5rem 1rem;
+  background: black;
+  color: white;
+  border: 2px solid black;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+/* WORK */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  gap: 1rem;
+}
+
+.work-1 { grid-column: 1 / 3; }
+.work-2 { grid-column: 3 / 5; }
+work-3 { grid-column: 5 / 7; }
+work-4 { grid-column: 1 / 4; grid-row: 2; }
+work-5 { grid-column: 4 / 5; grid-row: 2; }
+
+/* FOOTER */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
